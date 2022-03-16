@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator Sederhana</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<SCRIPT language ="JavaScript">
+	//<!-
+	function reset(){
+		document.kalkulator.value="";
+	}
+
+	function tambah() {
+		var num1= parseFloat(document.kalkulator.num1.value);
+		var num2= parseFloat(document.kalkulator.num2.value);
+		var hasil= num1+num2;
+		document.kalkulator.hasil.value=hasil;
+	}
+
+	function kurang() {
+		var num1= parseFloat(document.kalkulator.num1.value);
+		var num2= parseFloat(document.kalkulator.num2.value);
+		var hasil= num1-num2;
+		document.kalkulator.hasil.value=hasil;	
+	}
+
+	function kali() {
+		var num1= parseFloat(document.kalkulator.num1.value);
+		var num2= parseFloat(document.kalkulator.num2.value);
+		var hasil= num1*num2;
+		document.kalkulator.hasil.value=hasil;
+	}
+
+	function bagi() {
+		var num1= parseFloat(document.kalkulator.num1.value);
+		var num2= parseFloat(document.kalkulator.num2.value);
+		var hasil= num1/num2;
+		document.kalkulator.hasil.value=hasil;
+	}
+	document.write("Dimodifikasi terakhir pada "+document.lastModified);
+	//->
+</SCRIPT>
+<body>
+	<form name="kalkulator">
+	<div class="container">
+		<div class="header">
+			<h3>~ Kalkulator Sederhana ~<h3>
+			<h5> Silahkan memasukkan Bilangan I dan II</h5><br>
+		</div>
+
+		<div class="calculator">
+			<table>
+			<tbody>
+				<tr>
+					<th>Bilangan I : </th>
+					<td><input type="text" name="num1" class="textView"></td>
+				</tr>
+
+				<tr>
+					<th> Bilangan II : </th>
+					<td><input type="text" name="num2" class="textView"></td>
+				</tr>
+
+				<tr>
+					<th> Operasi kalkulator :</th>
+					<th><td><input type="button" class="button" value="+" onclick="tambah()"></td>
+					<td><input type="button" class="button" value="-" onclick="kurang()"></td>
+					<td><input type="button" class="button" value="*" onclick="kali()"></td>
+					<td><input type="button" class="button" value="/" onclick="bagi()"></td>
+					<td><input type="button" class="reset"name="RESET" value="reset" onclick="reset()"></td>
+				</tr>
+
+				<tr>
+					<th>Hasilnya :</th>
+					<td><input type="text" class="textView" name="hasil"></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</form>
+</body>
+</html>

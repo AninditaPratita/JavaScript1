@@ -1,0 +1,94 @@
+*{
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: Georgia;
+}
+.container{
+	position: absolute;
+	top : 10%;
+	left: 10%;
+}
+.header{
+	text-align: center;
+	color: steelblue;
+}
+
+.calculator{
+	line-height: 30px;
+	background: powderblue;
+	padding: 30px;
+	width: 400px;
+	border-radius: 10px 10px;
+	box-shadow: 0 8px 5px rgba(32,32,32,.3);
+	font-size: 14px;
+}
+
+.textView{
+	font-size: 14px;
+	width: 80px;
+}
+.button{
+	font-weight: bold;
+	width: 40px;
+	height: 25px;
+	margin-top: 10%;
+	margin-left: px;
+	border-radius: 5px 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px darkslateblue;
+	position: initial;
+}
+.button:hover{
+	background: cadetblue;
+	box-shadow: 2px 2px 2px black;
+}
+.reset{
+	background-color: lightsteelblue;
+	font-weight: bold;
+	width: 40px;
+	height: 25px;
+	margin-top: 10%;
+	margin-left: 5px;
+	border-radius: 5px 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px darkslateblue;
+	position: initial;
+}
+.reset:hover{
+	background: cadetblue;
+	box-shadow: 2px 2px 2px black;
+}
+.button1{
+	text-align: center;
+	font-weight: bold;
+	width: 130px;
+	height: 30px;
+	margin-top: 10%;
+	margin-left: 5px;
+	padding-left: 10px;
+	border-radius: 5px 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px darkslateblue;
+	position: initial;
+}
+.button1:hover{
+	background: cadetblue;
+	box-shadow: 2px 2px 2px black;
+}
+.input{
+	width: 150px;
+	height: 20px;
+}
+.konversi{
+	line-height: 30px;
+	background: powderblue;
+	padding: 30px;
+	width: 400px;
+	border-radius: 10px 10px;
+	box-shadow: 0 8px 5px rgba(32,32,32,.3);
+	font-size: 14px;
+	font-family: Georgia;
+}
+
+
